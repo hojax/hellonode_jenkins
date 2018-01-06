@@ -2,6 +2,8 @@ FROM node:7-onbuild
 
 LABEL maintainer "mathias talbo"
 
+RUN npm install
+
 # set health check
 HEALTHCHECK --interval=5s \
             --timeout=5s \
