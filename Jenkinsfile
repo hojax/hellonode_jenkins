@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build to the command line */
 
-        app = docker.build("hojax/hellonode")
+        app = docker.build("hojax/hellonode_jenkins")
     }
 
     stage('Test Image') {
